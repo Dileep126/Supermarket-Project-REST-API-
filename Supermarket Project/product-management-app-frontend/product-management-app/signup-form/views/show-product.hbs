@@ -1,0 +1,36 @@
+<div class="full-width text-center">
+  <h3>Product Details</h3>  
+  <hr>
+  
+  <table class="table table-sm">
+  <thead>
+    <tr>
+      
+      <th scope="col">Product master id</th>
+      <th scope="col">Category</th>
+      <th scope="col">Type</th>
+       <th scope="col">Brand</th>
+       <th scope="col">Product name</th>
+       <th scope="col">Color</th>
+       <th scope="col">Size</th>
+       <th scope="col">Weight</th>
+       <th scope="col">Specific details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td>{{product.productMasterId}}</td>
+      <td>{{product.productName}}</td>
+      <td>{{product.category}}</td>
+      <td>{{product.brand}}</td>
+      <td>{{product.type}}</td>
+      <td>{{product.productDetails.color}}</td>
+      <td>{{product.productDetails.size}}</td>
+      <td>{{product.productDetails.weight}}</td>
+      <td>{{product.productDetails.specific_details}}</td>
+    </tr>    
+  </tbody>
+</table>
+  
+</div>

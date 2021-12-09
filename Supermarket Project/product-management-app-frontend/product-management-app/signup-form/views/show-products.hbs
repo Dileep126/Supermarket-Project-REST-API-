@@ -1,0 +1,41 @@
+{{#if products}}
+  
+  <hr>
+    {{!-- 
+    In code below "each" interates over the "taxes" property and 
+    "this.taxCode" refers to the property inside the array of objects
+    --}}
+<table class="table table-bordered">
+<thead>     
+    <tr>      
+      
+      <th scope="col">Product master id</th>
+      <th scope="col">Category</th>
+      <th scope="col">Type</th>
+       <th scope="col">Brand</th>
+       <th scope="col">Product name</th>
+       <th scope="col">Color</th>
+       <th scope="col">Size</th>
+       <th scope="col">Weight</th>
+       <th scope="col">Specific details</th>
+    </tr>
+</thead>  
+<tbody>
+{{#each products}}       
+     <tr>      
+      <td>{{this.productMasterId}}</td>
+      <td>{{this.productName}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.brand}}</td>
+      <td>{{this.type}}</td>
+      <td>{{this.productDetails.color}}</td>
+      <td>{{this.productDetails.size}}</td>
+      <td>{{this.productDetails.weight}}</td>
+      <td>{{this.productDetails.specific_details}}</td>
+     </tr>     
+{{/each}}
+</tbody> 
+</table>
+{{else}}
+    <p><em>No Data Available</em></p>
+{{/if}}
